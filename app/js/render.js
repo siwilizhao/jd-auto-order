@@ -1,3 +1,4 @@
+const {dialog} = require('electron').remote
 const $ = require('jquery')
 const wait = require('siwi-wait')
 const {USERNAME, PASSWORD} = require('../../.env.js')
@@ -22,8 +23,16 @@ class Jd {
                 console.log('自动下单')
             }
         })
+
         $('.btn-stop').click(async () => {
             lock = false
+        })
+        $('.btn-start').click(async () => {
+            lock = true
+            while (lock) {
+                await wait(5* 1000)
+                console.log('自动下单')
+            }
         })
     }
 

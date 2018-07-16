@@ -24,7 +24,8 @@
     "bootstrap": "^4.1.2",
     "jquery": "^3.3.1",
     "siwi-uniquestring": "^1.0.4",
-    "siwi-wait": "^1.0.0"
+    "siwi-wait": "^1.0.0",
+    "vue": "^2.5.16"
   },
   "devDependencies": {
     "@types/electron": "^1.6.10",
