@@ -1,0 +1,35 @@
+{
+  "name": "jd-auto-order",
+  "version": "1.0.0",
+  "description": "electron auto submit order for jd",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siwilizhao/jd-auto-order.git"
+  },
+  "keywords": [
+    "SIWI"
+  ],
+  "author": "SIWI",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/siwilizhao/jd-auto-order/issues"
+  },
+  "homepage": "https://github.com/siwilizhao/jd-auto-order#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.2",
+    "jquery": "^3.3.1",
+    "siwi-uniquestring": "^1.0.4",
+    "siwi-wait": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.6.10",
+    "@types/node": "^10.5.2",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jd auto submit order tools</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" style="padding-top: 100px;">
+            <div class="col-4">
+                <div class="jumbotron jumbotron-fluid" style="display: flex; justify-content: center">
+                    <webview src="https://m.jd.com/"></webview>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="card" style="padding: 20px 0">
+                    <div class="card-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6">
+                                    <form action="" method="post">
+                                        <div class="form-group">
+                                            <label for="">选择账号</label>
+                                            <select class="form-control" name="" id="">
+                                                <option>Logger</option>
+                                                <option>Mankong</option>
+                                                <option>Siwi</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                    <button type="button" class="btn btn-primary">开始</button>
+                                    <button type="button" class="btn btn-secondary">停止</button>
+                                    <button type="button" class="btn btn-success">登陆</button>
+                                    <button type="button" class="btn btn-danger">打开调试</button>
+                                    <button type="button" class="btn btn-warning">关闭调试</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="margin-top: 50px">
+                    <div class="card-header">
+                        运行日志
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/render.js"></script>
+</body>
+
+</html>
