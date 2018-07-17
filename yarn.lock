@@ -662,6 +662,10 @@ pinkie@^2.0.0:
   version "2.0.4"
   resolved "http://registry.npm.taobao.org/pinkie/download/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
 
+popper.js@^1.14.3:
+  version "1.14.3"
+  resolved "http://registry.npm.taobao.org/popper.js/download/popper.js-1.14.3.tgz#1438f98d046acf7b4d78cd502bf418ac64d4f095"
+
 pretty-bytes@^1.0.2:
   version "1.0.4"
   resolved "http://registry.npm.taobao.org/pretty-bytes/download/pretty-bytes-1.0.4.tgz#0a22e8210609ad35542f8c8d5d2159aff0751c84"
@@ -798,6 +802,16 @@ single-line-log@^1.1.2:
   resolved "http://registry.npm.taobao.org/single-line-log/download/single-line-log-1.1.2.tgz#c2f83f273a3e1a16edb0995661da0ed5ef033364"
   dependencies:
     string-width "^1.0.1"
+
+siwi-datehelper@^1.0.1:
+  version "1.0.1"
+  resolved "http://registry.npm.taobao.org/siwi-datehelper/download/siwi-datehelper-1.0.1.tgz#ae929670cdbf761ff463accbfb02ff4148f022c8"
+
+siwi-logger@^1.0.9:
+  version "1.0.9"
+  resolved "http://registry.npm.taobao.org/siwi-logger/download/siwi-logger-1.0.9.tgz#b34503c15fa8b1152cbee3b07ce4d213f4702491"
+  dependencies:
+    siwi-datehelper "^1.0.1"
 
 siwi-uniquestring@^1.0.4:
   version "1.0.4"

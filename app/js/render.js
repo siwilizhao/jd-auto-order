@@ -40,6 +40,14 @@ class Jd {
                 console.log('自动下单')
             }
         })
+        $('.btn-debug-on').click(async () => {
+            webview.openDevTools()
+        })
+        $('.btn-debug-off').click(async () => {
+            if (webview.isDevToolsOpened()) {
+                webview.closeDevTools()
+            }
+        })
     }
 
     /**
@@ -106,6 +114,10 @@ class Jd {
     }
 
     async autoSubmit() {
+
+    }
+
+    async log() {
 
     }
 

@@ -23,6 +23,8 @@
   "dependencies": {
     "bootstrap": "^4.1.2",
     "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "siwi-logger": "^1.0.9",
     "siwi-uniquestring": "^1.0.4",
     "siwi-wait": "^1.0.0",
     "vue": "^2.5.16"

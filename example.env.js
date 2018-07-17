@@ -1,4 +1,6 @@
 module.exports = {
-    username: '',
-    password: ''
+    APP_ID: '',
+    APP_SECRET: '',
+    USERNAME: '',
+    PASSWORD: ''
 }
