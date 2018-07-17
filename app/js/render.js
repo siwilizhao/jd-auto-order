@@ -1,7 +1,13 @@
-const {dialog} = require('electron').remote
+const {
+    dialog
+} = require('electron').remote
+const webview = document.querySelector('webview')
 const $ = require('jquery')
 const wait = require('siwi-wait')
-const {USERNAME, PASSWORD} = require('../../.env.js')
+const {
+    USERNAME,
+    PASSWORD
+} = require('../../.env.js')
 let lock = false
 class Jd {
     constructor() {
@@ -19,7 +25,7 @@ class Jd {
         $('.btn-auto-submit').click(async () => {
             lock = true
             while (lock) {
-                await wait(5* 1000)
+                await wait(5 * 1000)
                 console.log('自动下单')
             }
         })
@@ -30,7 +36,7 @@ class Jd {
         $('.btn-start').click(async () => {
             lock = true
             while (lock) {
-                await wait(5* 1000)
+                await wait(5 * 1000)
                 console.log('自动下单')
             }
         })
@@ -87,17 +93,26 @@ class Jd {
      * 自动登陆
      */
     async autoLogin() {
-
+        const href = `https://plogin.m.jd.com/user/login.action?appid=461&returnurl=http%3A%2F%2Fhome.m.jd.com%2FmyJd%2Fhome.action&ipChanged=`
+        await this.loadUrl(href)
+        const code = `
+            document.getElementById('username').value = ${USERNAME}
+            document.getElementById('password').value = '${PASSWORD}'
+            document.getElementById('loginBtn').className += ' btn-active'
+            document.getElementById('loginBtn').click()
+        `
+        const res = await this.executeJavaScript(code)
+        console.log(res)
     }
 
     async autoSubmit() {
 
     }
 
-    
+
 }
 
 
-(function(){
+(function () {
     new Jd()
 })()
